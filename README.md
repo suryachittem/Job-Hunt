@@ -1,0 +1,126 @@
+🚀 Job-Hunt – Advanced Job Board Platform
+GitHub Repo URL Technology Stack Live Application
+
+A comprehensive, production-ready MERN stack job board application that connects talented job seekers with innovative employers. Built with modern technologies, robust security, and an exceptional user experience.
+
+✨ Key Features
+This platform is designed with two core user roles:
+
+🎯 For Job Seekers (Developers)
+🔐 Secure Authentication – JWT-based login and registration.
+🔍 Advanced Job Search – Real-time job search with filters (location, salary, job type, experience).
+💼 One-Click Applications – Apply to jobs seamlessly.
+📊 Application Tracking – Track applied jobs and their status.
+👤 Profile Management – Manage profile details with resume upload.
+📱 Mobile-First Design – Fully responsive across devices.
+🏢 For Employers (Recruiters)
+📝 Job Posting Management – Create, update, and delete job postings.
+👥 Applicant Dashboard – View and manage applicants.
+✅ Application Control – Accept or reject applications efficiently.
+🛠️ Technology Stack
+Category	Technology	Description
+Frontend Core	⚛️ React 19 (via Vite)	Component-based UI with Vite tooling.
+🎯 Redux Toolkit & Redux Persist	State management with persistence.
+🧭 React Router DOM	Client-side routing.
+Backend Core	🚀 Node.js & Express.js	RESTful API and server-side logic.
+🗄️ MongoDB & Mongoose	NoSQL database with schema modeling.
+Styling & UI	🎨 Tailwind CSS	Utility-first CSS framework.
+♿ Radix UI	Accessible UI primitives.
+✨ Framer Motion	Smooth animations and transitions.
+Communication	📡 Axios	HTTP client for API requests.
+🚀 Quick Start Guide
+Prerequisites
+Node.js >= 16.0.0
+MongoDB >= 5.0
+npm >= 8.0.0
+Installation
+Clone the repository:
+
+git clone [https://github.com/SHAIKHANIF2004/Job-Hunt.git](https://github.com/suryachittem/Job-Hunt.git)
+cd JobHunt
+Install dependencies: The project uses a monorepo structure (root for backend, client for frontend).
+
+# Install server dependencies (in the root folder)
+npm install
+
+# Install client dependencies (navigate to the client folder)
+cd client && npm install && cd ..
+Environment Setup
+
+Create a .env file in the root directory for Server variables.
+Create a client/.env file in the client/ directory for Client variables.
+Configure the required variables (listed in the next section).
+Start Development Servers
+
+Start the backend server (Port 3000):
+npm run dev
+In a separate terminal, start the frontend (Vite, Port 5173):
+cd client && npm run dev
+🌐 Live Application
+The JobHunt platform is live and publicly accessible!
+
+🚀 Ready to revolutionize job hunting? Visit the live application here:
+
+[https://job-hunt-3yhr.onrender.com]
+
+🔧 Environment Variables
+Server (.env)
+Variable	Description	Example Value
+MONGO_URL	Your MongoDB connection string.	mongodb://localhost:27017/jobhunt
+SECRET_KEY	Secret key for JWT signing.	your_super_secure_jwt_secret_key_here
+PORT	Backend server port.	3000
+CLOUDINARY_CLOUD_NAME	Cloudinary name for file uploads.	your_cloudinary_cloud_name
+CLOUDINARY_API_KEY	Cloudinary API Key.	your_cloudinary_api_key
+CLOUDINARY_API_SECRET	Cloudinary API Secret.	your_cloudinary_api_secret
+Client (client/.env)
+Variable	Description	Example Value
+VITE_API_BASE_URL	Base URL of the backend API.	http://localhost:3000
+📚 API Documentation
+The RESTful API is structured into versions (/api/v1) and organized by resource.
+
+Public Endpoints (No Auth): Login, Register, Get Jobs.
+Protected Endpoints (Auth Required): Post Job, Apply for Job, Get Applications.
+🤝 Contributing
+Contributions are welcome! If you have suggestions or want to improve the platform:
+
+Fork the repository.
+Create your feature branch (git checkout -b feature/amazing-feature).
+Commit your changes (git commit -m 'feat: Add amazing feature').
+Push to the branch.
+Open a Pull Request.
+Built with ❤️ by Chittem Surya
+
+Hanif Shaik - [suryachittem80@gmail.com]
+
+Project Link:  ***NOTE: The live application is now deployed. Run it locally to explore
+
+About
+A scalable job portal that brings recruiters and developers together—streamlining hiring through smart, efficient interactions.
+
+job-hunt-n7hh.onrender.com
+Topics
+redux nodejs mongodb reactjs mongoose expressjs
+Resources
+ Readme
+ Activity
+Stars
+ 1 star
+Watchers
+ 0 watching
+Forks
+ 0 forks
+Report repository
+Releases
+No releases published
+Packages
+No packages published
+Languages
+JavaScript
+96.3%
+ 
+CSS
+3.4%
+ 
+HTML
+0.3%
+Footer
