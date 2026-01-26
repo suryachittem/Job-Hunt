@@ -1,126 +1,73 @@
-🚀 Job-Hunt – Advanced Job Board Platform
-GitHub Repo URL Technology Stack Live Application
+# 💫 About Me  
 
-A comprehensive, production-ready MERN stack job board application that connects talented job seekers with innovative employers. Built with modern technologies, robust security, and an exceptional user experience.
+👋 Hi, I'm **Surya Chittem**  
+🎓 Student / Fresher passionate about **Software Development**  
+🌱 Currently learning **MERN Stack** for full-stack web development  
+☕ Strong interest in **Java & Data Structures and Algorithms**  
+🧠 Actively solving problems on **LeetCode** to sharpen problem-solving skills  
+🚀 Motivated to build real-world projects and grow every single day  
 
-✨ Key Features
-This platform is designed with two core user roles:
+---
 
-🎯 For Job Seekers (Developers)
-🔐 Secure Authentication – JWT-based login and registration.
-🔍 Advanced Job Search – Real-time job search with filters (location, salary, job type, experience).
-💼 One-Click Applications – Apply to jobs seamlessly.
-📊 Application Tracking – Track applied jobs and their status.
-👤 Profile Management – Manage profile details with resume upload.
-📱 Mobile-First Design – Fully responsive across devices.
-🏢 For Employers (Recruiters)
-📝 Job Posting Management – Create, update, and delete job postings.
-👥 Applicant Dashboard – View and manage applicants.
-✅ Application Control – Accept or reject applications efficiently.
-🛠️ Technology Stack
-Category	Technology	Description
-Frontend Core	⚛️ React 19 (via Vite)	Component-based UI with Vite tooling.
-🎯 Redux Toolkit & Redux Persist	State management with persistence.
-🧭 React Router DOM	Client-side routing.
-Backend Core	🚀 Node.js & Express.js	RESTful API and server-side logic.
-🗄️ MongoDB & Mongoose	NoSQL database with schema modeling.
-Styling & UI	🎨 Tailwind CSS	Utility-first CSS framework.
-♿ Radix UI	Accessible UI primitives.
-✨ Framer Motion	Smooth animations and transitions.
-Communication	📡 Axios	HTTP client for API requests.
-🚀 Quick Start Guide
-Prerequisites
-Node.js >= 16.0.0
-MongoDB >= 5.0
-npm >= 8.0.0
-Installation
-Clone the repository:
+## 🌐 Connect With Me  
 
-git clone [https://github.com/suryachittem/Job-Hunt.git](https://github.com/suryachittem/Job-Hunt.git)
-cd JobHunt
-Install dependencies: The project uses a monorepo structure (root for backend, client for frontend).
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/surya-chittem-118144281)
+[![LeetCode](https://img.shields.io/badge/LeetCode-%23FFA116.svg?logo=leetcode&logoColor=black)](https://leetcode.com/u/suryachittem/)
+[![Mastodon](https://img.shields.io/badge/Mastodon-%232B90D9.svg?logo=mastodon&logoColor=white)](https://mastodon.social/@CHITTEM%20SURYA)
+[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:suryachittem80@gmail.com)
 
-# Install server dependencies (in the root folder)
-npm install
+---
 
-# Install client dependencies (navigate to the client folder)
-cd client && npm install && cd ..
-Environment Setup
+## 💻 Tech Stack  
 
-Create a .env file in the root directory for Server variables.
-Create a client/.env file in the client/ directory for Client variables.
-Configure the required variables (listed in the next section).
-Start Development Servers
+### 🚀 Languages  
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-Start the backend server (Port 3000):
-npm run dev
-In a separate terminal, start the frontend (Vite, Port 5173):
-cd client && npm run dev
-🌐 Live Application
-The JobHunt platform is live and publicly accessible!
+### 🌐 Frontend  
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![EJS](https://img.shields.io/badge/ejs-%23B4CA65.svg?style=for-the-badge&logo=ejs&logoColor=black)
 
-🚀 Ready to revolutionize job hunting? Visit the live application here:
+### 🛠 Backend & Databases  
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
-[https://job-hunt-3yhr.onrender.com]
+### ⚙️ Tools & DevOps  
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
 
-🔧 Environment Variables
-Server (.env)
-Variable	Description	Example Value
-MONGO_URL	Your MongoDB connection string.	mongodb://localhost:27017/jobhunt
-SECRET_KEY	Secret key for JWT signing.	your_super_secure_jwt_secret_key_here
-PORT	Backend server port.	3000
-CLOUDINARY_CLOUD_NAME	Cloudinary name for file uploads.	your_cloudinary_cloud_name
-CLOUDINARY_API_KEY	Cloudinary API Key.	your_cloudinary_api_key
-CLOUDINARY_API_SECRET	Cloudinary API Secret.	your_cloudinary_api_secret
-Client (client/.env)
-Variable	Description	Example Value
-VITE_API_BASE_URL	Base URL of the backend API.	http://localhost:3000
-📚 API Documentation
-The RESTful API is structured into versions (/api/v1) and organized by resource.
+---
 
-Public Endpoints (No Auth): Login, Register, Get Jobs.
-Protected Endpoints (Auth Required): Post Job, Apply for Job, Get Applications.
-🤝 Contributing
-Contributions are welcome! If you have suggestions or want to improve the platform:
+## 📊 GitHub Stats  
 
-Fork the repository.
-Create your feature branch (git checkout -b feature/amazing-feature).
-Commit your changes (git commit -m 'feat: Add amazing feature').
-Push to the branch.
-Open a Pull Request.
-Built with ❤️ by Chittem Surya
+![](https://github-readme-stats.vercel.app/api?username=suryachittem&theme=dark&hide_border=false&include_all_commits=true&count_private=false)
+![](https://nirzak-streak-stats.vercel.app/?user=suryachittem&theme=dark&hide_border=false)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=suryachittem&theme=dark&hide_border=false&layout=compact)
 
-Hanif Shaik - [suryachittem80@gmail.com]
+---
 
-Project Link:  ***NOTE: The live application is now deployed. Run it locally to explore
+## 🧠 Problem Solving  
 
-About
-A scalable job portal that brings recruiters and developers together—streamlining hiring through smart, efficient interactions.
+📌 Regularly solving **DSA problems on LeetCode**  
+📈 Focus on **Arrays, Strings, Recursion, Hashing, Trees & Graphs**  
 
-job-hunt-n7hh.onrender.com
-Topics
-redux nodejs mongodb reactjs mongoose expressjs
-Resources
- Readme
- Activity
-Stars
- 1 star
-Watchers
- 0 watching
-Forks
- 0 forks
-Report repository
-Releases
-No releases published
-Packages
-No packages published
-Languages
-JavaScript
-96.3%
- 
-CSS
-3.4%
- 
-HTML
-0.3%
-Footer
+👉 **LeetCode Profile:** https://leetcode.com/u/suryachittem/
+
+---
+
+[![](https://visitcount.itsvg.in/api?id=suryachittem&icon=0&color=0)](https://visitcount.itsvg.in)
+
+<!-- Proudly customized with ❤️ -->
