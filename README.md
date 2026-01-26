@@ -36,7 +36,7 @@ npm >= 8.0.0
 Installation
 Clone the repository:
 
-git clone [https://github.com/SHAIKHANIF2004/Job-Hunt.git](https://github.com/suryachittem/Job-Hunt.git)
+git clone [https://github.com/suryachittem/Job-Hunt.git](https://github.com/suryachittem/Job-Hunt.git)
 cd JobHunt
 Install dependencies: The project uses a monorepo structure (root for backend, client for frontend).
 
