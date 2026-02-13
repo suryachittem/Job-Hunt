@@ -20,11 +20,16 @@ const _dirname = path.resolve();
 app.use(express.json());
 app.use(urlencoded({ extended: true }));
 app.use(cookieParser());
-const corsOptions = {
-  origin: "https://job-hunt-3yhr.onrender.com",
-  credentials: true,
-};
-app.use(cors(corsOptions));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://job-hunt-3yhr.onrender.com",
+    ],
+    credentials: true,
+  })
+);
+
 
 //api's
 app.use("/api/v1/user", userRoute);
