@@ -5,22 +5,19 @@ import { Input } from "../ui/input";
 import { RadioGroup } from "../ui/radio-group";
 import { Button } from "../ui/button";
 import { Link, useNavigate } from "react-router-dom";
-import { USER_API_END_POINT } from "@/utils/constant";
 import { toast } from "sonner";
 import axios from "axios";
+import { USER_API_END_POINT } from "@/utils/constant";
 import { useDispatch, useSelector } from "react-redux";
-import { setLoading } from "@/redux/authSlice";
+import { setLoading, setUser } from "@/redux/authSlice";
 import { Loader2 } from "lucide-react";
 import Footer from "../shared/Footer";
 
-const Signup = () => {
+const Login = () => {
   const [input, setInput] = useState({
-    fullname: "",
     email: "",
-    phoneNumber: "",
     password: "",
     role: "",
-    file: "",
   });
 
   const { loading, user } = useSelector((store) => store.auth);
@@ -31,31 +28,19 @@ const Signup = () => {
     setInput({ ...input, [event.target.name]: event.target.value });
   };
 
-  const changeFileHandler = (event) => {
-    setInput({ ...input, file: event.target.files?.[0] });
-  };
-
   const submitHandler = async (event) => {
     event.preventDefault();
-    const formData = new FormData();
-    formData.append("fullname", input.fullname);
-    formData.append("email", input.email);
-    formData.append("phoneNumber", input.phoneNumber);
-    formData.append("password", input.password);
-    formData.append("role", input.role);
-    if (input.file) {
-      formData.append("file", input.file);
-    }
     try {
       dispatch(setLoading(true));
-      const res = await axios.post(`${USER_API_END_POINT}/register`, formData, {
+      const res = await axios.post(`${USER_API_END_POINT}/login`, input, {
         headers: {
-          "Content-type": "multipart/form-data",
+          "Content-type": "application/json",
         },
         withCredentials: true,
       });
       if (res.data.success) {
-        navigate("/login");
+        dispatch(setUser(res.data.user));
+        navigate("/");
         toast.success(res.data.message);
       }
     } catch (error) {
@@ -65,64 +50,46 @@ const Signup = () => {
       dispatch(setLoading(false));
     }
   };
+
   useEffect(() => {
     if (user) navigate("/");
   }, []);
   return (
     <div>
       <Navbar />
-      <div className="flex items-center flex-col justify-center max-w-7xl mx-auto mb-9">
+      <div className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 max-w-7xl mx-auto mb-24">
         <form
           onSubmit={submitHandler}
-          className="w-1/2 border border-gray-200 rounded-md p-4 my-10"
+          className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 border border-gray-200 rounded-md p-4 sm:p-6 md:p-8 my-8 shadow-sm"
         >
-          <h1 className="font-bold text-xl mb-5 ">Signup</h1>
-          <div className="my-2 space-y-2">
-            <Label htmlFor="fullname">FullName</Label>
-            <Input
-              type="text"
-              value={input.fullname}
-              name="fullname"
-              onChange={changeEventHandler}
-              placeholder="Eg.Surya Chittem"
-              id="fullname"
-            />
-          </div>
+          <h1 className="font-bold text-xl mb-5 ">Login</h1>
+
           <div className="my-2 space-y-2">
             <Label htmlFor="email">Email</Label>
             <Input
               type="email"
-              value={input.email}
               name="email"
+              value={input.email}
               onChange={changeEventHandler}
-              placeholder="Eg.suryachittem@gmail.com"
+              placeholder="example@gmail.com"
               id="email"
             />
           </div>
+
           <div className="my-2 space-y-2">
             <Label htmlFor="password">Password</Label>
             <Input
               type="password"
-              placeholder="Eg.*******"
-              value={input.password}
               name="password"
+              value={input.password}
               onChange={changeEventHandler}
+              placeholder="example@1234"
               id="password"
             />
           </div>
-          <div className="my-2 space-y-2">
-            <Label htmlFor="phNo">Phone Number</Label>
-            <Input
-              type="tel"
-              value={input.phoneNumber}
-              name="phoneNumber"
-              onChange={changeEventHandler}
-              placeholder="Eg. 9090909090"
-              id="phNo"
-            />
-          </div>
-          <div className="flex items-center justify-between">
-            <RadioGroup className="flex items-center justify-between gap-4 my-5">
+
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-4 gap-3">
+            <RadioGroup className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 my-3">
               <div className="flex items-center gap-3">
                 <Input
                   type="radio"
@@ -144,39 +111,30 @@ const Signup = () => {
                   value="recruiter"
                   checked={input.role === "recruiter"}
                   onChange={changeEventHandler}
-                  id="r2"
                   className="cursor-pointer"
+                  id="r2"
                 />
                 <Label htmlFor="r2" className="cursor-pointer">
                   Recruiter
                 </Label>
               </div>
             </RadioGroup>
-            <div className="flex items-center gap-2">
-              <Label>Profile</Label>
-              <Input
-                accept="image/*"
-                type="file"
-                name="file"
-                onChange={changeFileHandler}
-                className="cursor-pointer"
-              />
-            </div>
           </div>
           {loading ? (
             <Button className="w-full my-4">
               <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Please wait
             </Button>
           ) : (
-            <Button type="submit" className="w-full ">
-              Signup
+            <Button type="submit" className="w-full my-4">
+              Login
             </Button>
           )}
         </form>
-        <span className="text-sm">
-          Have an account?{" "}
-          <Link to="/login" className="text-blue-600 underline">
-            Login
+
+        <span className="text-sm text-center mb-6">
+          Don't have an account?{" "}
+          <Link to="/signup" className="text-blue-600 underline">
+            Signup
           </Link>
         </span>
       </div>
@@ -185,4 +143,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Login;
